@@ -43,11 +43,37 @@
 
     <!-- Main content -->
     <main>
-        <section id="hero">
-            <div id="cover-text">
-                <h2>Love Running</h2>
-                <h3>Dublin Doclands & Phoenix Park</h3>
+        <section id="signup">
+         <form id="signup-form" method="post" action="https://formdump.codeinstitute.net">
+            <h2> <i class="fa-solid fa-heart-pulse"></i> Let's get you signed up!  </h2>
+           
+            <label for="first-name">First Name</label>
+            <input class="text-input" type="text" id="first-name" name="name" required>
+            <br>
+            <label for="last-name">Last Name</label>
+            <input class="text-input" type="text" id="last-name" name="" required>
+            <br>
+            <label for="email-address">Email Address</label>
+            <input class="text-input" type="text" id="email-address" name="email" required>
+            <br>
+  
+        <div class="radio-buttons">
+            <div>
+                <label for="road">Road</label>
+                <input type="radio" name="running_preference" id="road" required checked>
             </div>
+            <div>
+                <label for="trail">Trail</label>
+                <input type="radio" name="running_preference" id="trail" required>
+            </div>
+            <div>
+                <label for="both">Both</label>
+                <input type="radio" name="running_preference" id="both" required>
+            </div>
+        </div>
+        <button type="submit" class="join-button">Let's Run!</button>
+         </form>
+            
         </section>
     </main>
     
