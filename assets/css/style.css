@@ -18,17 +18,21 @@ body {
     color: #3a3a3a;
     font-family: "Poppins",  system-ui;
 }
-
+h1, h2, h3 {
+    font-family: "Sofadi One", system-ui;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
 
 /* Header */
-header {
-background-color: #ffffff;   
-padding: 0 1rem;
-position: fixed;
-z-index: 99;
-width: 100%;
-box-shadow: 0 2px 2px #3a3a3a;
-display: flex;
+    header {
+    background-color: #ffffff;   
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
@@ -37,11 +41,6 @@ header a {
     color: inherit;
     
 }
-h1 {
-    font-family: "Sofadi One", system-ui;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
    
 }
 
@@ -88,7 +87,27 @@ main {
     flex: 1 0 auto;
     margin-top: 47px;
 }
-
+/* Hero Section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background : url("../images/hero-image.webp") no-repeat center center/cover;
+    position: relative;
+    }
+#cover-text {
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+    }
+   #cover-text > h2, 
+   #cover-text > h3 {
+    color: #ffffff;
+   }     
 
 /* Footer */
 
@@ -139,6 +158,12 @@ main {
     main {
         margin-top: 79px;
     }
+    /* Hero */
+    #cover-text {
+        width: 300px;
+        right: 40px;
+    }
+}
 
     /* Largert device  (Laptop and Desktop 992px and up)  */
     @media screen and (min-width: 992px) {
